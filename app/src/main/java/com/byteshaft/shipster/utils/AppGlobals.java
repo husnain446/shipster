@@ -20,9 +20,6 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-/**
- * Created by husnain on 8/17/16.
- */
 public class AppGlobals extends Application {
     private static Context sContext;
     public static int responseCode = 0;

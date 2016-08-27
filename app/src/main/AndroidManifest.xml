@@ -18,13 +18,15 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name=".SplashScreenActivity"/>
-        <activity android:name=".account.ForgotPasswordActivity"/>
-        <activity android:name=".account.LoginActivity">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            </activity>
+        <activity android:name=".account.ForgotPasswordActivity"/>
+        <activity android:name=".account.LoginActivity">
         </activity>
         <activity android:name=".account.RegisterActivity"/>
     </application>

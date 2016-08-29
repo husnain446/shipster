@@ -2,6 +2,117 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/dashboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#37591C">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="DASHBOARD"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dashboard_layout"
+        android:background="#d3d3d3">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_user" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/user_img"
+            android:textSize="20sp"
+            android:text="user2445"/>
+
+        <Button
+            android:id="@+id/button_edit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAllCaps="false"
+            android:text="Edit Account"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/address_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/user_layout">
+
+       <TextView
+           android:id="@+id/tv_instruction"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Shipster Dashboard Instructions"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/colorPrimary"
+           android:textSize="20sp" />
+
+       <TextView
+           android:id="@+id/tv_address_heading"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginLeft="20dp"
+           android:textStyle="bold"
+           android:layout_below="@+id/tv_instruction"
+           android:text="My Address: "
+           android:textSize="20sp" />
+
+       <TextView
+           android:id="@+id/tv_address"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="4dp"
+           android:layout_marginLeft="20dp"
+           android:text="David developer Test customer \nOffice # 14, 2nd floor, Khan Center, Multan."
+           android:layout_below="@+id/tv_address_heading"/>
+
+       <TextView
+           android:id="@+id/tv_postcode"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="1234567 \nSalem, OH 44446"
+           android:layout_marginLeft="20dp"
+           android:layout_below="@+id/tv_address"/>
+   </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_recent_pkgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Most Recent Repackages"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="There are no repackages to view this time"
+        android:layout_below="@+id/tv_recent_pkgs"/>
 </RelativeLayout>

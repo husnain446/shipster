@@ -8,9 +8,6 @@ import android.view.ViewGroup;
 
 import com.byteshaft.shipster.R;
 
-/**
- * Created by husnain on 8/17/16.
- */
 public class Account extends Fragment {
 
     private View mBaseView;

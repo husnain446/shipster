@@ -124,7 +124,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="10dip"
-                android:text="Data Created"
+                android:text="Date Created"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14dp" />
 

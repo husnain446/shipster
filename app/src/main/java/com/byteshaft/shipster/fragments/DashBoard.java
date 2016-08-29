@@ -20,7 +20,7 @@ public class DashBoard extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mBaseView = inflater.inflate(R.layout.dashboard, container, false);
         mAddressText = (TextView) mBaseView.findViewById(R.id.tv_address);
-        editAccountButton = (Button) mAddressText.findViewById(R.id.button_edit_account);
+        editAccountButton = (Button) mBaseView.findViewById(R.id.button_edit_account);
         editAccountButton.setOnClickListener(this);
         return mBaseView;
     }

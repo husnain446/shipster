@@ -1,7 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:id="@+id/sub_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp">
 
+        <TextView
+            android:id="@+id/tv_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Shipster Include Pictures Instructions"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="Customer : Shahid Ghafoor"
+            android:layout_below="@+id/tv_instruction"/>
+        
+        <TextView
+            android:id="@+id/items_per_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Items per page"
+            android:layout_below="@+id/user_name"/>
+
+        <RelativeLayout
+            android:layout_below="@id/items_per_page"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+
+            <Spinner
+                android:id="@+id/items_per_page_spinner"
+                android:layout_height="20dp"
+                android:layout_width="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:entries="@array/numbers_array" />
+
+            <Button
+                android:id="@+id/button_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/items_per_page_spinner"
+                android:text="Apply"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/sub_layout"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/repackage_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view">
+
+    </ListView>
 </RelativeLayout>

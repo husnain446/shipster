@@ -57,7 +57,7 @@
         </RelativeLayout>
 
         <CheckBox
-            android:id="@+id/shipments_checkbox"
+            android:id="@+id/all_shipments_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -70,7 +70,7 @@
             android:id="@+id/text_view_instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/shipments_checkbox"
+            android:layout_below="@+id/all_shipments_checkbox"
             android:layout_marginTop="4dp"
             android:text="Choose Shipments Instructions"
             android:textColor="@color/colorPrimary"
@@ -128,13 +128,13 @@
                 android:text="Keep shoe Box" />
 
             <CheckBox
-                android:id="@+id/product_box_checkbox"
+                android:id="@+id/larg_product_box_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Keep Larg Product Boxes" />
 
             <CheckBox
-                android:id="@+id/packing_material_checkbox"
+                android:id="@+id/extra_packing_material_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Use Extra Safety Packing Material" />

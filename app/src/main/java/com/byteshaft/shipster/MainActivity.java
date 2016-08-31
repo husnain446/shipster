@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void loadFragment(Fragment fragment) {
+    public static void loadFragment(Fragment fragment) {
         FragmentTransaction tx = MainActivity.getInstance().getSupportFragmentManager().beginTransaction();
         tx.replace(R.id.container, fragment);
         tx.commit();

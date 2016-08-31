@@ -1,8 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="4dp"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/prohibited_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/prohibited_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_items_per_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prohibited_text"
+            android:layout_marginTop="8dp"
+            android:text="Items per page"
+            android:textStyle="bold" />
 
 
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_items_per_page"
+            android:layout_marginTop="10dp">
 
-</RelativeLayout>
+            <Spinner
+                android:id="@+id/items_per_page_spinner"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:entries="@array/numbers_array" />
+
+            <Button
+                android:id="@+id/button_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/items_per_page_spinner"
+                android:background="@android:color/white"
+                android:text="Apply" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/all_shipments_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout"
+            android:text="Check all shipment"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/all_shipments_checkbox"
+            android:layout_marginTop="4dp"
+            android:text="Choose Shipments Instructions"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/useless_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_instructions"
+            android:gravity="center"
+            android:text="NO Result"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/useless_text"
+            android:text="There are no shipments available for viewing."
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/fragile_sticker_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:text="Include Fragile sticker($1.00)" />
+
+        <CheckBox
+            android:id="@+id/include_insurance_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragile_sticker_checkbox"
+            android:text="Insurance ($2.00 per $100 of declared value)" />
+
+        <TextView
+            android:id="@+id/tv_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include_insurance_checkbox"
+            android:text="You will choose shipping at the checkout page." />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tv"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/shoes_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep shoe Box" />
+
+            <CheckBox
+                android:id="@+id/larg_product_box_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep Larg Product Boxes" />
+
+            <CheckBox
+                android:id="@+id/extra_packing_material_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Extra Safety Packing Material" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/tv_items_per_page"
+            android:layout_alignRight="@+id/tv_items_per_page"
+            android:layout_below="@+id/linearLayout"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_save"
+            android:layout_marginTop="4dp"
+            android:text="To create your order, select the shipments and click 'Save' "
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

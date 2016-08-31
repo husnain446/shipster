@@ -8,6 +8,10 @@
     <string name="Alert">*ATTENTION! DHL and Aramex are currently not accepting battery chargers such as anker auckey and other similar brands. if your order contains a battery charger please only send with Fedex if you pay for DHL or Aramex and have charger, your order will automatically be switched to Fedex. Thank You!</string>
     <string name="address">Address: Byteshaft is a software services provider company, multan cantt.</string>
     <string name="prohibited_text">These shipments are prohibited! They can not be sent overseas! Only ship to United States Address</string>
+    <string name="experience_text">How do you like our services? Please Leave a review of your
+        experience on <b>ADSLGATE.com</b> under the e-commer_e section here <a>ADSLGATE</a>>
+    </string>
+    <string name="emil_text">Order information will be sent to your e-mail listed below.</string>
 
     <string-array name="numbers_array">
         <item>1</item>

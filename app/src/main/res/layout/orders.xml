@@ -1,7 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"/>
 
+    <RelativeLayout
+        android:id="@+id/layout_date_time1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:background="@color/gray_color">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/date_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="1/09/2018"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_number"
+                android:text="Order#"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/order_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_number"
+                android:layout_marginLeft="90dp"
+                android:text="1092018"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_numbers"
+                android:text="Order#"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/action_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_numbers"
+                android:layout_marginLeft="90dp"
+                android:text="images will be here"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_image"
+                android:text="Status"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_image"
+                android:layout_marginLeft="90dp"
+                android:text="completed"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_text"
+                android:text="Product"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/product_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_text"
+                android:layout_marginLeft="90dp"
+                android:text="1"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout_date_time1"
+        android:background="#dcecf5">
+
+        <TextView
+            android:id="@+id/total_texView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Total"
+            android:textColor="@color/header_background"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="$107.67"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_date_time2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_total">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/date_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="1/09/2018"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/order1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_number1"
+                android:text="Order#"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/order_numbers1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_number1"
+                android:layout_marginLeft="90dp"
+                android:text="1092018"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/action1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_numbers1"
+                android:text="Order#"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/action_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_numbers1"
+                android:layout_marginLeft="90dp"
+                android:text="images will be here"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_image1"
+                android:text="Status"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/status_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_image1"
+                android:layout_marginLeft="90dp"
+                android:text="completed"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/product1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_text1"
+                android:text="Product"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/product_numbers1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_text1"
+                android:layout_marginLeft="90dp"
+                android:text="1"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_total1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout_date_time2"
+        android:background="#dcecf5">
+
+        <TextView
+            android:id="@+id/total_texView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Total"
+            android:textColor="@color/header_background"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="$107.67"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
 </RelativeLayout>
